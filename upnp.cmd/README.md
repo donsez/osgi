@@ -38,7 +38,8 @@ upnp:subscribe uuid:XXXXXX urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistr
 upnp:unsubscribe uuid:XXXXXX urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistrar
 ```
 ## TODO
-* implement missing commands "services", "statevariables", "actions", "subscribe"
+* implement missing commands "services", "statevariables", "actions"
+* add command for invoking an action
 
 ## License
 
