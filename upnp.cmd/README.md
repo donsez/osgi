@@ -19,11 +19,11 @@ java -jar bin/felix.jar
 
 In the Apache Felix Gogo Shell
 ```
-start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.osgi.compendium-1.4.0.jar
-start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.log-1.0.1.jar
-start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.upnp.extra-0.4.0.jar
-start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.upnp.basedriver-0.8.0.jar
-start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.upnp.tester-0.4.0.jar
+obr:list | grep UPnP
+obr:deploy "Apache Felix UPnP Base Driver"
+obr:deploy "Apache Felix UPnP Extra"
+obr:deploy -s "Apache Felix UPnP Tester"
+obr:deploy -s "Apache Felix UPnP Base Driver"
 
 start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.ipojo-1.12.1.jar
 start http://apache.mirrors.ovh.net/ftp.apache.org/dist//felix/org.apache.felix.ipojo.api-1.12.1.jar
